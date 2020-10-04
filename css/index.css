@@ -1,0 +1,465 @@
+@font-face {
+  font-family: HeadlineFont;
+  src: url(../source/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: LatoLight;
+  src: url(../source/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../source/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoBold;
+  src: url(../source/fonts/Lato-Bold.ttf);
+}
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 60px;
+  border-radius: 35px;
+  text-align: center;
+}
+a.btn.btn-primary {
+  background-color: #fb9f94;
+  color: #fff;
+  box-shadow: 0 10px 50px 0 rgba(245, 152, 143, 0.25);
+  transition: background-color 0.25s ease-in-out;
+}
+a.btn.btn-primary:hover {
+  background-color: #e58077;
+}
+a.btn.btn-outline {
+  border: 1px solid #f69990;
+  color: #f69990;
+  background-color: transparent;
+  transition: background-color 0.25s ease-in-out;
+}
+a.btn.btn-outline:hover {
+  background-color: #f69990;
+  color: #fff;
+}
+
+.img-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.img-wrapper.header {
+  background: url("../images/top-woman.png") no-repeat bottom center;
+  background-size: contain;
+}
+.img-wrapper.about {
+  background: url("../images/about-me-woman.png") no-repeat center;
+  background-size: contain;
+}
+.img-wrapper.contact {
+  background: url("../images/contact-person.png") no-repeat right bottom;
+  background-size: 125%;
+}
+
+h4.title {
+  font-family: HeadlineFont;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #683e42;
+  display: inline-block;
+  position: relative;
+}
+h4.title + .description {
+  color: #683e42;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: calc(1.1rem * 1.5);
+}
+h4.title + .description.contact {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+h4.title.right {
+  padding: 60px 0 0;
+}
+h4.title.right:after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  background-color: #f69990;
+  height: 80%;
+  right: -40px;
+  top: 0;
+}
+h4.title.left {
+  padding: 0 0 60px;
+}
+h4.title.left:after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  background-color: #f69990;
+  height: 80%;
+  left: -40px;
+  bottom: 0;
+}
+h4.title.center {
+  padding: 150px 0 60px;
+}
+h4.title.center:after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  background-color: #f69990;
+  height: 3px;
+  left: 25%;
+  bottom: 30px;
+}
+h4.title.bottom {
+  padding: 0 0 30px;
+}
+h4.title.bottom:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  background-color: #f69990;
+  height: 3px;
+  left: 0;
+  bottom: 0px;
+}
+
+body {
+  font-family: Lato;
+}
+body div.menu-container {
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+}
+body div.menu-container .menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body div.menu-container .menu-wrapper .left {
+  display: flex;
+  align-items: center;
+}
+body div.menu-container .menu-wrapper .left .logo img {
+  height: 30px;
+}
+body div.menu-container .menu-wrapper .left .items-menu {
+  margin-left: 80px;
+}
+body div.menu-container .menu-wrapper .left .items-menu a {
+  font-family: LatoLight;
+  padding: 30px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #3c2729;
+  position: relative;
+}
+body div.menu-container .menu-wrapper .left .items-menu a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease;
+  background-color: transparent;
+}
+body div.menu-container .menu-wrapper .left .items-menu a:hover {
+  font-family: Lato;
+}
+body div.menu-container .menu-wrapper .left .items-menu a:hover:after {
+  background-color: #ffb5be;
+}
+body div.menu-container .menu-wrapper .right {
+  display: flex;
+  align-items: center;
+}
+body div.menu-container .menu-wrapper .right .circle {
+  background-image: linear-gradient(to right, #fb9f94 0%, #f69990 100%);
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body div.menu-container .menu-wrapper .right .circle img {
+  width: 15px;
+}
+body div.menu-container .menu-wrapper .right .phone {
+  margin-left: 20px;
+  color: #e77381;
+}
+body div.header {
+  background: url("../images/bg-top.png") no-repeat center, linear-gradient(to top, #feeeee 0%, #fef4f4 100%);
+  background-size: cover;
+}
+body div.header .text-wrapper {
+  padding: 150px 0;
+}
+body div.header .text-wrapper h1 {
+  font-family: HeadlineFont;
+  font-size: 3.5rem;
+  color: #683e42;
+}
+body div.header .text-wrapper p {
+  color: #7e595c;
+  font-size: 1.2rem;
+  margin: 20px 0 50px;
+}
+body div#o-mnie p {
+  padding-left: 10px;
+  color: #683e42;
+  font-size: 1rem;
+  font-family: LatoLight;
+  line-height: 1.5rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+body div#uslugi div.wrapper-uslugi {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body div#uslugi div.wrapper-uslugi .item {
+  flex: 0 0 33.33%;
+  height: 500px;
+  opacity: 0.25;
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.75s ease-in-out;
+  overflow: hidden;
+}
+body div#uslugi div.wrapper-uslugi .item .text-box {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 40px;
+  flex-direction: column;
+  height: 40%;
+  background-color: rgba(246, 153, 144, 0.9);
+  bottom: -40%;
+  transition: bottom 0.75s ease-in-out;
+  color: #fff;
+}
+body div#uslugi div.wrapper-uslugi .item .text-box p.title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+body div#uslugi div.wrapper-uslugi .item:hover {
+  opacity: 1;
+}
+body div#uslugi div.wrapper-uslugi .item:hover .text-box {
+  bottom: 0;
+}
+body div#certyfikaty .slider {
+  width: 100%;
+  position: relative;
+}
+body div#certyfikaty .slider .nav-slider {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  top: calc(50% - 15px);
+  background-repeat: no-repeat;
+}
+body div#certyfikaty .slider .nav-slider.prev {
+  background: url("../images/prev.png");
+  background-size: cover;
+  left: -50px;
+}
+body div#certyfikaty .slider .nav-slider.next {
+  right: -50px;
+  background: url("../images/next.png");
+  background-size: cover;
+}
+body div#certyfikaty .slider .your-class {
+  display: flex;
+}
+body div#certyfikaty .slider .your-class .slick-slide {
+  opacity: 0.2;
+  transform: scale(0.9);
+}
+body div#certyfikaty .slider .your-class .slick-center {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1.05s ease-in-out, transform 1.05s ease-in-out;
+}
+body div#certyfikaty .slider .your-class .slick-center div.item p {
+  opacity: 1;
+  transition: opacity 0.75s ease-in-out;
+}
+body div#certyfikaty .slider .your-class div.item {
+  text-align: center;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+body div#certyfikaty .slider .your-class div.item .img {
+  background: url("../images/bg-slider.png");
+  height: 90px;
+  width: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto 20px;
+}
+body div#certyfikaty .slider .your-class div.item .img .icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+body div#certyfikaty .slider .your-class div.item p {
+  color: #683e42;
+  opacity: 0.2;
+}
+body div#certyfikaty .slider .your-class div.item p.type {
+  font-size: 0.95rem;
+  font-family: LatoLight;
+  margin-bottom: 10px;
+}
+body div#certyfikaty .slider .your-class div.item p.name {
+  font-size: 1.1rem;
+  font-family: LatoBold;
+}
+body div#kontakt {
+  background-color: #fee9e9;
+}
+body div#kontakt .left {
+  padding: 80px 0;
+}
+body div#kontakt .left .phone, body div#kontakt .left .email {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+body div#kontakt .left .phone img, body div#kontakt .left .email img {
+  width: 40px;
+}
+body div#kontakt .left .phone p, body div#kontakt .left .email p {
+  margin-left: 10px;
+  color: #683e42;
+  font-size: 1.2rem;
+}
+body div#footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+body div#footer img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+body div#footer p.copyright {
+  color: #683e42;
+  font-size: 0.9rem;
+  font-family: LatoLight;
+}
+body div#footer a.site {
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  color: #683e42;
+  margin-bottom: 5px;
+  font-family: LatoBold;
+}
+
+@media (max-width: 991.98px) {
+  body div.menu-container .menu-wrapper .left .items-menu a {
+    padding: 30px 15px;
+  }
+
+  body div.menu-container .menu-wrapper .left .items-menu {
+    margin-left: 30px;
+  }
+
+  .img-wrapper.header {
+    background-position: bottom left;
+    background-size: 170%;
+  }
+
+  .img-wrapper.about {
+    background-position: center right;
+    background-size: 130%;
+  }
+
+  .img-wrapper.contact {
+    background-position: center bottom;
+    background-size: 165%;
+  }
+
+  body div#uslugi div.wrapper-uslugi .item {
+    height: 350px;
+  }
+
+  body div#uslugi div.wrapper-uslugi .item .text-box {
+    height: 60%;
+    bottom: -60%;
+  }
+}
+@media (max-width: 767.98px) {
+  body div.menu-container .menu-wrapper {
+    padding: 30px 10px;
+  }
+
+  body div.header .text-wrapper {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  div#uslugi {
+    padding-top: 80px !important;
+  }
+
+  h4.title.center {
+    padding-top: 80px !important;
+  }
+
+  h4.title + .description {
+    width: 100%;
+  }
+
+  body div#uslugi div.wrapper-uslugi .item {
+    height: 290px !important;
+    flex: 0 0 50%;
+  }
+
+  body div#uslugi div.wrapper-uslugi .item .text-box {
+    height: 80%;
+    bottom: -80%;
+  }
+}
+@media (max-width: 575.98px) {
+  body div#uslugi div.wrapper-uslugi .item {
+    height: 290px !important;
+    flex: 0 0 100%;
+  }
+
+  body div#certyfikaty .slider .nav-slider.next {
+    right: 0;
+  }
+
+  body div#certyfikaty .slider .nav-slider.prev {
+    left: 0;
+  }
+
+  body div#uslugi div.wrapper-uslugi .item .text-box {
+    height: 80%;
+    bottom: -80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
